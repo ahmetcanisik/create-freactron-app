@@ -1,21 +1,47 @@
 {
-  "name": "react-and-electron",
-  "version": "0.1.0",
+  "name": "create-freactron-app",
+  "description": "Run your electron application and react application separately and get build.",
+  "author": "ahmetcanisik <imcanisik@gmail.com> (https://ahmetcanisik.com)",
+  "license": "MIT",
+  "version": "0.0.1",
   "private": true,
+  "homepage": "./",
+  "main": "public/electron.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "fvonts": "^0.0.1",
+    "fvuarjs": "^1.4.2",
+    "mycolorscheme": "^0.0.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "set \"BROWSER=none\" && react-scripts start",
+    "build": "set \"GENERATE_SOURCEMAP=false\" && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "dist": "electron-builder",
+    "dev": "concurrently \"yarn start\" \"yarn electron\""
+  },
+  "build": {
+    "appId": "com.example.app",
+    "productName": "My Electron App",
+    "directories": {
+      "output": "dist",
+      "buildResources": "assets"
+    },
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "win": {
+      "target": "nsis"
+    }
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +60,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "autoprefixer": "^10.4.19",
+    "concurrently": "^8.2.2",
+    "electron": "^31.2.0",
+    "electron-builder": "^24.13.3",
+    "electron-is-dev": "^3.0.1",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.4"
   }
 }

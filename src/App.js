@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <main className="flex flex-col gap-10 my-10 justify-center items-center w-full">
+        <h1 className="text-4xl">react ve electron'u birlikte kullanmak</h1>
+        <ul className="list-disc list-inside">
+          <li>
+            react uygulamanızı, <code>yarn start</code> diyerek görüntüleyebilirsiniz.
+          </li>
+          <li>
+            electron uygulamanızı görüntülemek için öncelikle <code>yarn build</code> demeniz ve
+            ardından <code>yarn electron</code> diyerek electron uygulamanızı görebilirsiniz.
+          </li>
+        </ul>
+      </main>
   );
 }
 

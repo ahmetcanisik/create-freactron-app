@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# create-freactron-app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+react ve electron'u birlikte kullanarak bir uygulama geliştirebilirsiniz.
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `yarn start`
+install with : [npm](#install-with-npm) or [yarn](#install-with-yarn)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br />
 
-### `yarn test`
+## Install with npm
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+indirmek için şu komutları terminalinize giriniz `(npm)`
 
-### `yarn build`
+```bash
+npx create-freactron-app my-app
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+indirdikten sonra proje dizinine giriyoruz `(npm)`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+cd my-app
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+dizine girdikten sonra şu komutlar ile proje bağımlılıklarını indirin `(npm)`
 
-### `yarn eject`
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+projeyi `npm` ile başlat
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm run dev
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+| aktif komutlar   | amacı                                               |
+|------------------|-----------------------------------------------------|
+| npm run start    | react'ı başlatır                                    |
+| npm run dev      | electron uygulamasını ve react sunucusunu başlatır. |
+| npm run electron | electron'u başlatır                                 |
+| npm run build    | react'ı build eder                                  |
+| npm run dist     | electron'u build eder                               |
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<br />
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Install with yarn
 
-### Analyzing the Bundle Size
+indirmek için şu komutları terminalinize giriniz `(yarn)`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+yarn create freactron-app my-app
+```
 
-### Making a Progressive Web App
+indirdikten sonra proje dizinine giriyoruz `(yarn)`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+cd my-app
+```
 
-### Advanced Configuration
+dizine girdikten sonra şu komutlar ile proje bağımlılıklarını indirin `(yarn)`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+yarn install
+```
 
-### Deployment
+projeyi `yarn` ile başlat
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+yarn dev
+```
 
-### `yarn build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| aktif komutlar | amacı                                               |
+|----------------|-----------------------------------------------------|
+| yarn start     | react'ı başlatır                                    |
+| yarn dev       | electron uygulamasını ve react sunucusunu başlatır. |
+| yarn electron  | electron'u başlatır                                 |
+| yarn build     | react'ı build eder                                  |
+| yarn dist      | electron'u build eder                               |
