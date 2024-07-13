@@ -17,11 +17,10 @@ async function createWindow() {
         if (isDev.default) {
             win.loadURL('http://localhost:3000');
         } else {
-            win.loadFile(path.join(__dirname, 'build', 'index.html'));
+            win.loadFile(path.join(__dirname, "../", 'build', 'index.html'));
         }
     } catch (error) {
         console.error('Error loading electron-is-dev:', error);
-        // Handle error loading module
     }
 }
 
