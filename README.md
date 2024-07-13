@@ -16,10 +16,10 @@ install with : [npm](#install-with-npm) or [yarn](#install-with-yarn)
 
 ## Install with npm
 
-indirmek için şu komutları terminalinize giriniz `(npm)`
+indirmek için şu komutları terminalinize giriniz `(git)`
 
 ```bash
-npx create-freactron-app my-app
+git clone https://github.com/ahmetcanisik/create-freactron-app.git my-app
 ```
 
 indirdikten sonra proje dizinine giriyoruz `(npm)`
@@ -56,10 +56,10 @@ npm run dev
 
 ## Install with yarn
 
-indirmek için şu komutları terminalinize giriniz `(yarn)`
+indirmek için şu komutları terminalinize giriniz `(git)`
 
 ```bash
-yarn create freactron-app my-app
+git clone https://github.com/ahmetcanisik/create-freactron-app.git my-app
 ```
 
 indirdikten sonra proje dizinine giriyoruz `(yarn)`
