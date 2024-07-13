@@ -2,12 +2,17 @@
 
 react ve electron'u birlikte kullanarak bir uygulama geliştirebilirsiniz.
 
-
-
 install with : [npm](#install-with-npm) or [yarn](#install-with-yarn)
 
 
-<br />
+> [!IMPORTANT]   
+> If there is no build folder in your project and you are trying to start electron then you will get an error. If you want to fix it, the following commands will work:   
+> ```bash   
+> yarn build  
+> ```    
+
+
+<br /><br />
 
 ## Install with npm
 
@@ -46,7 +51,7 @@ npm run dev
 
 
 
-<br />
+<br /><br />
 
 
 ## Install with yarn
