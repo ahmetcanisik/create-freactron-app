@@ -4,7 +4,7 @@
   "author": "ahmetcanisik <imcanisik@gmail.com> (https://ahmetcanisik.com)",
   "license": "MIT",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
   "homepage": "./",
   "main": "public/electron.js",
   "dependencies": {
